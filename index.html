@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Left Hand Versus Right Hand</title>
+  </head>
+  <body>
+    <details class="instructions">
+      <summary>Controls</summary>
+      <p>Press "W" to move left paddle up</p>
+      <p>Press "S" to move left paddle down</p>
+      <p>Press "I" to move left paddle up</p>
+      <p>Press "K" to move left paddle down</p>
+    </details>
+    <h1 class="title">LeftVSRight</h1>
+    <span class="score player1Score" id="player1Score">0</span>
+    <span class="score player2Score" id="player2Score">0</span>
+    <h3 class="startText" id="startText">Press any key to start the game</h3>
+    <div class="gameArea">
+      <div id="paddle1" class="paddle1 paddle"></div>
+      <div id="paddle2" class="paddle2 paddle"></div>
+      <div id="ball" class="ball"></div>
+      <div class="net"></div>
+    </div>
+    <img src="./assets/machine.png" alt="Arcade Pong Machine" class="bg" />
+    <div class="vignette"></div>
+    <audio src="./assets/paddle.wav" id="paddleSound"></audio>
+    <audio src="./assets/wall.wav" id="wallSound"></audio>
+    <audio src="./assets/loss.wav" id="lossSound"></audio>
+    <audio src="./assets/Mr. Miser.wav" id="bgMusic"></audio>
+    <audio src="./assets/victory.wav" id="winner"></audio>
+  </body>
+</html>
